@@ -1,8 +1,44 @@
+Remote Repository
+=====
+
+[1] Create a local repository form remote repository
+$ git clone git://github.com/schacon/grit.git mygrit
+
+[] Show remote servers
+$ git remote -v
+origin git://github.com/schacon/ticgit.git
+
+[] Change the URL for a remote repository
+$ git remote set-url origin git@github.com:vollov/notes.git
+
+[] Pushing to remote server
+git push [remote-name] [branch-name]
+$ git push origin master
+
+[] Add a short name for a remote git repository
+run git remote add [shortname] [url]:
+$ git remote
+origin
+$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote -v
+origin git://github.com/schacon/ticgit.git
+pb git://github.com/paulboone/ticgit.git
+
+[] fetch all the information that pb has but that you don’t yet have in your repository
+$ git fetch pb
+remote: Counting objects: 58, done.
+remote: Compressing objects: 100% (41/41), done.
+remote: Total 44 (delta 24), reused 1 (delta 0)
+Unpacking objects: 100% (44/44), done.
+From git://github.com/paulboone/ticgit
+* [new branch] master -> pb/master
+* [new branch] ticgit -> pb/ticgit
+
+
+
 [1] initialize a repository
 $ git init
 
-[2] Cloning an Existing Repository
-$ git clone git://github.com/schacon/grit.git mygrit
 
 [3] Checking the Status
 $ git status

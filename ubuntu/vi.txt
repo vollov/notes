@@ -1,0 +1,10 @@
+[1] to set tab indent to 4 character
+
+dustin@ubuntu:~$ cat .vimrc
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+[2] java script syntex
+use javascript.vim

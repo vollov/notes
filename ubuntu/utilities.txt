@@ -1,0 +1,7 @@
+[1] to burn a music CD
+sudo apt-get install ubuntu-restricted-extras
+Brasero 
+
+[2] download vedios form utube
+e.g : youtube-dl http://www.youtube.com/watch?v=D1R-jKKp3NA
+ffmpeg -i my_flash_video.flv the_avi_file.avi

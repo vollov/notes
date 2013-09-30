@@ -1,0 +1,7 @@
+sudo apt-get update
+sudo apt-get install git-core curl build-essential openssl libssl-dev
+
+apt-get install node npm
+
+
+export PATH=/home/dustin/projects/node-lab/node_modules/.bin:$PATH

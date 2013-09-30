@@ -1,0 +1,3 @@
+dos2unix recursively
+
+find . -type f \! -path \*/\.svn/\* -exec dos2unix {} \;

@@ -1,0 +1,49 @@
+ubuntu server and windows client
+  
+must export an existing local repository as a bare server repository.
+######################################################
+# export an existing repository to a linux server
+######################################################
+git clone --bare it-notes it-notes.git
+cp waterloo.git /home/dustin/waterloo.git
+change the group ownership
+chmod g+w /home/dustin/waterloo.git
+set all new files and directories created in the repos directory be owned
+chmod g+s /home/dustin/waterloo.git
+  
+[1]windows client
+1) ssh-keygen -t rsa
+2) copy public key to ubuntu .ssh/authorized_keys
+
+[2]To clone from server:
+git clone dustin@10.100.78.143:/home/dustin/projects/it-notes.git
+
+[3] Pushing to remote server (upload changes to server)
+git push [remote-name] [branch-name]
+$ git push origin master
+
+git checkout -b mynewfeature
+... edit files, add and commit ...
+$ git push -u origin mongo-angularjs
+
+
+
+[4] get data from a remote projects (svn update)
+$ git pull
+$git fetch origin
+
+
+Before you can start working locally on a remote branch, you need to fetch it as called out in answers below.
+
+To fetch a branch, you simply need to:
+
+git fetch origin
+This will fetch all of the remote branches for you. With the remote branches in hand, you now need to check out the branch you are interested in, giving you a local working copy:
+
+git checkout -b mongo-angularjs origin/mongo-angularjs
+
+
+[5] Show remote servers
+$ git remote -v
+
+This is update from client

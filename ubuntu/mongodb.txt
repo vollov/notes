@@ -1,0 +1,30 @@
+vi /etc/apt/sources.list
+
+append to end of the file
+deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
+
+sudo apt-get update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+sudo apt-get install mongodb-10gen
+
+MongoDB is installed, started, and 
+auto start MongoDB script is generated to /etc/init/mongo and /etc/init.d/mongo. In addition, all MongoDB files are copied to /usr/bin folder.
+
+/etc/mongodb.conf
+# mongodb.conf
+# Where to store the data.
+ 
+dbpath=/var/lib/mongodb
+ 
+#where to log
+logpath=/var/log/mongodb/mongodb.log
+ 
+logappend=true
+ 
+#port = 27017
+#......
+
+
+$ mongo
+MongoDB shell version: 1.8.1
+connecting to: test

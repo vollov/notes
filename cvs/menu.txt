@@ -1,0 +1,10 @@
+add a branch
+
+SET CVS_RSH=H:\opt\putty\plink.exe
+SET CVSROOT=:ext:cvs-server:/data/cvs/InvestmentServices
+cvs co -r CCT_ESB_13-5 INV_Account_Income_Payment_RIFMinMax_Tech_Module
+
+cvs tag -b CCT_ESB_13-5
+cvs rtag -b -r old_branch_name new_branch_name module_name
+
+cvs rtag -b -r CCT_ESB_12-5 CCT_ESB_13-5 MMF_Account_Interest_Accruals_Module

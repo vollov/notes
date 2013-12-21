@@ -30,7 +30,7 @@ Here is a useful example of the useradd command. Why use useradd?
 It gives a few more options for special cases. To add a user, give her a 
 standard home directory in the /home folder and specify the shell 
 she accesses by default do this:
-
+$ useradd -d /home/santosh -m santosh
 $ sudo useradd username -m -s /bin/bash 
 $ sudo passwd username 
 

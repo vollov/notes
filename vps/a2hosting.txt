@@ -1,0 +1,39 @@
+http://jblevins.org/log/ubuntu-vps
+http://www.ubuntugeek.com/a2hosting-ubuntu-virtual-private-server-vps-setup-2.html
+
+ssh -p 7822 <IP ADDRESS> -l root
+passwd
+apt-get install --reinstall language-pack-en
+
+vi /etc/apt/sources.list
+deb http://us.archive.ubuntu.com/ubuntu/ gutsy main universe multiverse restricted
+deb http://us.archive.ubuntu.com/ubuntu/ gutsy-updates main restricted
+deb http://us.archive.ubuntu.com/ubuntu/ gutsy-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu gutsy-security main restricted universe multiverse
+
+# apt-get update
+# apt-get upgrade
+
+# apt-get install adduser
+# adduser <username>
+
+vi /etc/sudoers to add
+<username>  ALL=(ALL) ALL
+
+vi /etc/ssh/sshd_config to set
+PermitRootLogin=no
+AllowUsers <username>
+
+#vi /etc/apt/sources.list
+deb http://archive.ubuntu.com/ubuntu quantal main restricted universe
+deb http://security.ubuntu.com/ubuntu quantal-security main restricted universe
+deb http://archive.ubuntu.com/ubuntu quantal-updates main restricted universe
+
+apt-get install build-essential openssl libssl-dev pkg-config
+apt-get remove node
+git clone https://github.com/joyent/node.git
+cd node
+git checkout v0.10.5 
+Note: Try checking nodejs.org for what the stable version is
+
+./configure --prefix=/usr/local/nodejs && make && sudo make install

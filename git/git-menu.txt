@@ -57,7 +57,7 @@ $ git add new.file
 [5] Staging Modified Files
 $ git add modified.file
 
-[6] To see what you’ve changed but not yet staged
+[6] To see what youï¿½ve changed but not yet staged
 $ git diff
 
 [7] Compares your staged changes to your last commit:
@@ -97,7 +97,7 @@ Option Description of Output
 %p Abbreviated parent hashes
 %an Author name
 %ae Author e-mail
-%ad Author date (format respects the –date= option)
+%ad Author date (format respects the ï¿½date= option)
 %ar Author date, relative
 %cn Committer name
 %ce Committer email
@@ -126,7 +126,7 @@ $ git log --stat
 $ git commit -m 'initial commit'
 $ git add forgotten_file
 $ git commit --amend
-All three of these commands end up with a single commit — 
+All three of these commands end up with a single commit ï¿½ 
 the second commit replaces the results of the first.
 
 [19] Unstaging a Staged File
@@ -148,7 +148,7 @@ $ git remote -v
 origin git://github.com/schacon/ticgit.git
 pb git://github.com/paulboone/ticgit.git
 
-[23] fetch all the information that pb has but that you don’t yet have in your repository
+[23] fetch all the information that pb has but that you donï¿½t yet have in your repository
 $ git fetch pb
 remote: Counting objects: 58, done.
 remote: Compressing objects: 100% (41/41), done.
@@ -178,10 +178,16 @@ $ git tag -a v1.4 -m 'my version 1.4'
 [33] Lightweight Tags
 $ git tag v1.4-lw
 
-[] remove a tag
+[34] remove a tag
 git tag -d tagname
-      
 
+[35] push tags:
+git push --tags
+
+[36] to push a single tag:
+git push origin <tag_name>
+
+git remote set-url origin git@github.com:vollov/backbone-tutorial.git
 ////////////////////////////////////////////////////////
   Branching
 ////////////////////////////////////////////////////////

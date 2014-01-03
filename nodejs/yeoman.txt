@@ -1,0 +1,53 @@
+#################################
+# bower
+#################################
+[1] install bower
+npm install -g bower
+
+[2] install package
+bower install <package>#<version>
+bower install --save <package>#<version>
+
+[3] search for packages registered with Bower
+bower search [<name>]
+
+[4] using packages
+<script src="/bower_components/jquery/index.js"></script>
+
+[5] uninstall
+bower uninstall <package-name>
+
+[7] generate bower.json
+bower init
+
+[8] list current modules
+bower list
+#################################
+# grunt
+#################################
+[1] install grunt
+npm install -g grunt-cli
+
+[2] key files
+Gruntfile.js and package.json
+
+#################################
+# yo
+#################################
+[1] install yo
+npm install -g yo
+npm install -g generator-angular
+npm install -g generator-webapp
+npm install -g generator-heroku
+npm install -g generator-backbone
+
+[2] sample start
+yo webapp                      # scaffold out a skeleton web app project
+bower install underscore       # install a dependency for your project from Bower
+grunt                          # build the application for deployment
+grunt test                     # test your app
+grunt server                   # preview your app
+
+yo backbone:model todo
+
+

@@ -1,6 +1,6 @@
 #This File Shows Markdown
 
-We know that a Domain name search can be a daunting task. With all the domain names to search and choose from, finding the right domain name can be difficult. But thanks to Netfirms' low low prices, domain name registration is easier than ever. Our domain name search function is easy to use and will help guide you through the domain name registration process.
+We know that a **Domain name** search can be a daunting task. With all the domain names to search and choose from, finding the right domain name can be difficult. But thanks to Netfirms' low low prices, domain name registration is easier than ever. Our domain name search function is easy to use and will help guide you through the domain name registration process.
 
 ## heading 2
 Supplement standard domain names and protect your brands and trademarks with country-specific domains such as .CA for Canada, or .CO.UK for the United Kingdom.

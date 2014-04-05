@@ -1,3 +1,5 @@
+git remote set-url origin git@github.com:vollov/xxx.git
+
 references:
 http://progit.org/book/
 http://gitimmersion.com/

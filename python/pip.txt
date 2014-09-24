@@ -1,0 +1,15 @@
+[1] list installed packages
+root@server:/home/dustin# pip freeze
+Flask==0.10.1
+Jinja2==2.7.3
+MarkupSafe==0.23
+Werkzeug==0.9.6
+argparse==1.2.1
+itsdangerous==0.24
+wsgiref==0.1.2
+
+[2] installed directory
+/usr/local/lib/python2.7/dist-packages
+
+[3] uninstall
+pip uninstall flask

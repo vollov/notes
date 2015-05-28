@@ -1,0 +1,15 @@
+[1] how to wipe out water mark
+
+Zoom in, select the Clone stamp tool, with a small fuzzy brush and start copying 
+image areas over the watermark (Press the Ctrl key and click to define a sorce 
+area and then just paint). When you think the result is not smooth enough, use 
+the similar Healing tool. You may need a lot of patience and attention to detail.
+
+
+[2] image resize
+Use Image → Scale Image to open the Scale Image dialog. You can right click on 
+the image to open the menu, or use the menu along the top of the Image window. 
+Notice that the Scale Image menu item contains three dots, which is a hint that 
+a dialog will be opened.
+
+choice width, then Interpolation->cubic

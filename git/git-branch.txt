@@ -1,0 +1,12 @@
+
+
+git remote add upstream https://github.com/vollov/sm
+
+#create a new branch for the work
+git checkout -b single_store upstream/master
+git commit -m 'Added two more tests for edge cases'
+git push origin single_store
+
+#create a branch and push
+git checkout -b single_store
+git push origin single_store
